@@ -10,26 +10,20 @@ This project involves creating a game using Docker and deploying it to AWS. Dock
 
 Create a file named `Dockerfile` and add the following lines:
 
-```Dockerfile
-FROM ubuntu:22.04
+### 2. Build the Docker image
 
-RUN apt-get update && apt-get install -y nginx zip curl
+    docker build -t 2048-game .
 
-RUN echo "daemon off;" > /etc/nginx/nginx.conf
+### 3. Create a container from the Docker image
 
-RUN curl -o /var/www/html/master.zip https://github.com/gabrielfrancisco/2048-game/archive/master.zip
+    docker run -d -p 80:80 2048-game
 
-RUN unzip /var/www/html/master.zip -d /var/www/html/2048-game-master
+### 4. Deploy the container to AWS using Elastic Beanstalk
+- Create an Elastic Beanstalk application.
+- Upload the Dockerfile to the Elastic Beanstalk application.
+- Create an environment for the Elastic Beanstalk application.
+- Launch the Elastic Beanstalk application.
 
-RUN mv /var/www/html/2048-game-master/* /var/www/html
-
-RUN rm -rf /var/www/html/2048-game-master
-
-RUN rm -rf /var/www/html/master.zip
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/1175750/8614312/280e5dc2-26f1-11e5-9f1f-5891c3ca8b26.png" alt="Screenshot"/>
