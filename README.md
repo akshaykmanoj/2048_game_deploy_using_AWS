@@ -37,6 +37,25 @@ How to Use:
 
     AWS Deployment: Learn AWS Elastic Beanstalk Web application deployment.
 
+
+# Documentation Exploration
+
+To ensure a comprehensive understanding of the technologies used in this project, take the time to explore the official documentation of the key tools:
+
+1. **Docker Documentation**
+   - [Docker Documentation](https://docs.docker.com/)
+
+2. **AWS Elastic Beanstalk Documentation**
+   - [AWS Elastic Beanstalk Documentation](https://docs.aws.amazon.com/elasticbeanstalk/index.html)
+
+3. **AWS IAM Documentation**
+   - [AWS IAM Documentation](https://docs.aws.amazon.com/iam/index.html)
+
+Understanding the core concepts, features, and best practices outlined in these resources will empower you to make informed decisions and effectively navigate your project development.
+
+Feel free to dive deep into the documentation to grasp the full potential of Docker, AWS Elastic Beanstalk, and IAM. Knowledge of these fundamentals will be invaluable as you progress through your project.
+
+
 ## Contributing
-Changes and improvements are more than welcome! Feel free to fork and open a pull request. Please make your changes in a specific branch and request to pull into `main`! If you can, please make sure the game fully works before sending the PR, as that will help speed up the process.
+Changes and improvements are more than welcome! Feel free to fork and open a pull request. Please make your changes in a specific branch and request to pull into `main`! If you have any queries, suggestions, or feedback, please feel free to contact @akshaykmanoj45@gmail.com. I appreciate your interest and involvement in learning!
 
