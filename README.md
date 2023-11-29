@@ -8,7 +8,7 @@ This project involves creating a game using Docker and deploying it to AWS. Dock
 
 ### 1. Create a Dockerfile
 
-    Create a file named `Dockerfile`:
+Create a file named `Dockerfile`:
 
 ### 2. Build the Docker image
 
